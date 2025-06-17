@@ -3,138 +3,230 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ELF TATTOO - Arte en tu Piel</title>
+    <title>ELF TATTOO - Estrella | Black Work, Japonés, Anime</title>
+    <meta name="description" content="Estudio de tatuajes profesional especializado en Black Work, estilo Japonés y Anime. Estrella, tatuadora profesional en Málaga.">
     <link rel="stylesheet" href="styles.css">
-    <!-- Scripts externos -->
-    <script src="https://static.elfsight.com/platform/platform.js" async></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Pantalla de carga -->
-    <div class="loading" aria-hidden="true">
-        <div class="loading-text">ELF TATTOO</div>
-    </div>
-
-    <!-- Header -->
-    <header>
-        <nav class="container" aria-label="Navegación principal">
-            <div class="logo">ELF TATTOO</div>
-            <ul class="nav-links">
-                <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#sobre-mi">Sobre Mí</a></li>
-                <li><a href="#servicios">Servicios</a></li>
-                <li><a href="#galeria">Galería</a></li>
-                <li><a href="#contacto">Contacto</a></li>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>ELF TATTOO</h2>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#home" class="nav-link">Inicio</a></li>
+                <li><a href="#about" class="nav-link">Sobre Mí</a></li>
+                <li><a href="#styles" class="nav-link">Estilos</a></li>
+                <li><a href="#gallery" class="nav-link">Galería</a></li>
+                <li><a href="#contact" class="nav-link">Contacto</a></li>
             </ul>
-        </nav>
-    </header>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
 
     <!-- Hero Section -->
-    <section id="inicio" class="hero" role="region" aria-label="Sección de inicio">
-        <div class="container">
-            <div class="hero-content">
-                <h1>ELF TATTOO</h1>
-                <p>Arte mágico en tu piel • Diseños únicos • Técnica profesional</p>
-                <a href="#contacto" class="cta-button">Reserva tu Cita</a>
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">ELF TATTOO</h1>
+                <p class="hero-subtitle">Arte corporal profesional por Estrella</p>
+                <p class="hero-description">Especializada en Black Work, estilo Japonés y Anime</p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn btn-primary">Reservar Cita</a>
+                    <a href="#gallery" class="btn btn-secondary">Ver Trabajos</a>
+                </div>
             </div>
         </div>
+        <div class="hero-overlay"></div>
     </section>
 
-    <!-- Sobre mí -->
-    <section id="sobre-mi" class="about" role="region" aria-label="Sobre mí">
+    <!-- About Section -->
+    <section id="about" class="about">
         <div class="container">
-            <h2 class="section-title">Sobre Mí</h2>
             <div class="about-content">
                 <div class="about-text">
-                    <p>Bienvenido a ELF TATTOO, donde cada tatuaje es una obra de arte única que cuenta tu historia...</p>
-                    <p>Mi enfoque combina técnicas tradicionales con estilos modernos...</p>
-                    <p>Cada sesión es una colaboración entre artista y cliente...</p>
+                    <h2 class="section-title">Sobre Estrella</h2>
+                    <p class="about-description">
+                        Soy Estrella, tatuadora profesional con años de experiencia creando arte único sobre la piel. 
+                        Mi pasión se centra en tres estilos distintivos que me permiten expresar creatividad y técnica 
+                        en cada trabajo.
+                    </p>
+                    <p class="about-description">
+                        Trabajo en el prestigioso estudio Serendipia, donde cada tatuaje es una obra de arte personalizada 
+                        que cuenta tu historia de manera única y permanente.
+                    </p>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <span class="stat-number">500+</span>
+                            <span class="stat-label">Tatuajes realizados</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">5+</span>
+                            <span class="stat-label">Años de experiencia</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">3</span>
+                            <span class="stat-label">Estilos especializados</span>
+                        </div>
+                    </div>
                 </div>
                 <div class="about-image">
-                    <img src="ruta/de/tu/imagen.jpg" alt="Artista tatuadora trabajando" loading="lazy">
+                    <div class="image-placeholder">
+                        <i class="fas fa-user-circle"></i>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Servicios -->
-    <section id="servicios" class="services" role="region" aria-label="Servicios">
+    <!-- Styles Section -->
+    <section id="styles" class="styles">
         <div class="container">
-            <h2 class="section-title">Servicios</h2>
-            <div class="services-grid">
-                <!-- Repite esto para cada servicio -->
-                <div class="service-card">
-                    <div class="service-icon" aria-hidden="true">🎨</div>
-                    <h3>Diseños Personalizados</h3>
-                    <p>Creación de diseños únicos adaptados a tu personalidad y estilo...</p>
+            <h2 class="section-title">Estilos Especializados</h2>
+            <div class="styles-grid">
+                <div class="style-card">
+                    <div class="style-icon">
+                        <i class="fas fa-paint-brush"></i>
+                    </div>
+                    <h3>Black Work</h3>
+                    <p>Tatuajes en negro intenso con diseños geométricos, ornamentales y abstractos que destacan por su impacto visual.</p>
                 </div>
-                <!-- ...resto de servicios igual... -->
+                <div class="style-card">
+                    <div class="style-icon">
+                        <i class="fas fa-yin-yang"></i>
+                    </div>
+                    <h3>Japonés</h3>
+                    <p>Arte tradicional japonés con dragones, carpas koi, flores de cerezo y elementos culturales auténticos.</p>
+                </div>
+                <div class="style-card">
+                    <div class="style-icon">
+                        <i class="fas fa-magic"></i>
+                    </div>
+                    <h3>Anime</h3>
+                    <p>Personajes y elementos del mundo anime con colores vibrantes y técnicas que capturan la esencia del manga.</p>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Galería -->
-    <section id="galeria" class="gallery" role="region" aria-label="Galería de tatuajes">
+    <!-- Instagram Gallery -->
+    <section id="gallery" class="gallery">
         <div class="container">
-            <h2 class="section-title">Galería</h2>
-            <div class="elfsight-app-973b529e-10c7-4e74-af67-219077ffe226" data-elfsight-app-lazy></div>
+            <h2 class="section-title">Últimos Trabajos</h2>
+            <div class="instagram-feed" id="instagram-feed">
+                <!-- Instagram posts cargados dinámicamente -->
+                <div class="instagram-placeholder">
+                    <i class="fab fa-instagram"></i>
+                    <p>Conectando con Instagram...</p>
+                </div>
+            </div>
+            <div class="gallery-footer">
+                <a href="https://www.instagram.com/elf.f_tattoo/" target="_blank" class="btn btn-instagram">
+                    <i class="fab fa-instagram"></i>
+                    Sígueme en Instagram
+                </a>
+            </div>
         </div>
     </section>
 
-    <!-- Contacto -->
-    <section id="contacto" class="contact" role="region" aria-label="Formulario de contacto">
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
         <div class="container">
-            <h2 class="section-title">Contacto</h2>
+            <h2 class="section-title">Contacto y Ubicación</h2>
             <div class="contact-content">
-                <div class="contact-form">
-                    <form id="contactForm" novalidate>
-                        <div class="form-group">
-                            <label for="nombre">Nombre</label>
-                            <input type="text" id="nombre" name="nombre" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="email">Email</label>
-                            <input type="email" id="email" name="email" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="telefono">Teléfono</label>
-                            <input type="tel" id="telefono" name="telefono">
-                        </div>
-                        <div class="form-group">
-                            <label for="mensaje">Describe tu idea de tatuaje</label>
-                            <textarea id="mensaje" name="mensaje" placeholder="Cuéntame sobre el diseño que tienes en mente..." required></textarea>
-                        </div>
-                        <button type="submit" class="submit-btn">Enviar Consulta</button>
-                    </form>
-                </div>
                 <div class="contact-info">
                     <h3>Información de Contacto</h3>
-                    <ul>
-                        <li><span aria-hidden="true">📍</span> Estudio privado - Ubicación por cita previa</li>
-                        <li><span aria-hidden="true">📱</span> +34 XXX XXX XXX</li>
-                        <li><span aria-hidden="true">✉️</span> info@elftattoo.com</li>
-                        <li><span aria-hidden="true">⏰</span> Lun - Sáb: 10:00 - 20:00</li>
-                        <li><span aria-hidden="true">💰</span> Consulta gratuita • Presupuesto personalizado</li>
-                        <li><span aria-hidden="true">🛡️</span> Estudio certificado • Máxima higiene y seguridad</li>
-                    </ul>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <strong>Teléfono</strong>
+                            <p>+34 615 972 352</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <strong>Ubicación</strong>
+                            <p>Estudio Serendipia<br>Calle Palma del Río 21<br>Málaga, España</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fab fa-instagram"></i>
+                        <div>
+                            <strong>Instagram</strong>
+                            <p>@elf.f_tattoo</p>
+                        </div>
+                    </div>
+                    <div class="contact-social">
+                        <a href="https://wa.me/34615972352" target="_blank" class="social-btn whatsapp">
+                            <i class="fab fa-whatsapp"></i>
+                            WhatsApp
+                        </a>
+                        <a href="https://www.instagram.com/elf.f_tattoo/" target="_blank" class="social-btn instagram">
+                            <i class="fab fa-instagram"></i>
+                            Instagram
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Contact Form -->
+                <div class="contact-form">
+                    <h3>Solicitar Información</h3>
+                    <form id="contact-form">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Tu nombre" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Tu email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" id="phone" name="phone" placeholder="Tu teléfono">
+                        </div>
+                        <div class="form-group">
+                            <select id="style" name="style" required>
+                                <option value="">Selecciona un estilo</option>
+                                <option value="blackwork">Black Work</option>
+                                <option value="japones">Japonés</option>
+                                <option value="anime">Anime</option>
+                                <option value="consulta">Consulta general</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" placeholder="Describe tu idea de tatuaje..." rows="4" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">
+                            <i class="fab fa-whatsapp"></i>
+                            Enviar por WhatsApp
+                        </button>
+                    </form>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer role="contentinfo">
+    <footer class="footer">
         <div class="container">
-            <div class="social-links" aria-label="Redes sociales">
-                <a href="#" aria-label="Instagram">📷</a>
-                <a href="#" aria-label="Facebook">📘</a>
-                <a href="#" aria-label="TikTok">🎵</a>
-                <a href="#" aria-label="WhatsApp">💬</a>
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h3>ELF TATTOO</h3>
+                    <p>Arte corporal profesional</p>
+                </div>
+                <div class="footer-info">
+                    <p>&copy; 2024 ELF TATTOO. Todos los derechos reservados.</p>
+                    <p>Estudio Serendipia - Málaga, España</p>
+                </div>
             </div>
-            <p>&copy; 2025 ELF TATTOO. Todos los derechos reservados. | Arte mágico en tu piel ✨</p>
         </div>
     </footer>
 
-    <!-- Script principal -->
-    <script src="script.js" defer></script>
+    <script src="script.js"></script>
 </body>
 </html>
